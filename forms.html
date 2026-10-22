@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Ukázková galerie různých HTML formulářových prvků.">
+    <title>Ukázky formulářů</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="forms-page">
+    <header class="topbar forms-topbar">
+      <a class="mini-wordmark" href="index.html" aria-label="Google – domů">
+        <span class="google-blue">G</span><span class="google-red">o</span><span class="google-yellow">o</span><span class="google-blue">g</span><span class="google-green">l</span><span class="google-red">e</span>
+      </a>
+      <nav aria-label="Hlavní navigace">
+        <a href="index.html">Vyhledávání</a>
+        <a href="image.html">Obrázky</a>
+        <a href="advanced.html">Rozšířené vyhledávání</a>
+      </nav>
+    </header>
+    <main class="forms-main">
+      <h1>Galerie formulářových prvků</h1>
+      <p class="forms-intro">Přehled různých typů polí HTML. Tato ukázková pole jsou záměrně nefunkční a jejich data se nikam neodesílají.</p>
+      <form class="demo-form" aria-label="Ukázkový nefunkční formulář">
+        <fieldset disabled>
+          <legend>Osobní údaje</legend>
+          <div class="demo-grid">
+            <label for="demo-name">Jméno <input id="demo-name" type="text" placeholder="Jan Novák"></label>
+            <label for="demo-email">E-mail <input id="demo-email" type="email" placeholder="jan@example.cz"></label>
+            <label for="demo-password">Heslo <input id="demo-password" type="password" placeholder="Zadejte heslo"></label>
+            <label for="demo-phone">Telefon <input id="demo-phone" type="tel" placeholder="+420 123 456 789"></label>
+            <label for="demo-url">Webová adresa <input id="demo-url" type="url" placeholder="https://example.cz"></label>
+            <label for="demo-search">Vyhledávací pole <input id="demo-search" type="search" placeholder="Hledat..."></label>
+            <label for="demo-number">Číslo <input id="demo-number" type="number" min="0" max="100" value="25"></label>
+            <label for="demo-range">Rozsah <input id="demo-range" type="range" min="0" max="10" value="6"></label>
+            <label for="demo-date">Datum <input id="demo-date" type="date" value="2026-10-22"></label>
+            <label for="demo-time">Čas <input id="demo-time" type="time" value="12:30"></label>
+            <label for="demo-month">Měsíc <input id="demo-month" type="month" value="2026-10"></label>
+            <label for="demo-week">Týden <input id="demo-week" type="week" value="2026-W43"></label>
+            <label for="demo-color">Barva <input id="demo-color" type="color" value="#4285f4"></label>
+            <label for="demo-file">Soubor <input id="demo-file" type="file"></label>
+            <label for="demo-select">Oblíbená barva
+              <select id="demo-select">
+                <option>Vyberte barvu</option>
+                <optgroup label="Studené barvy">
+                  <option>Modrá</option>
+                  <option>Zelená</option>
+                </optgroup>
+                <optgroup label="Teplé barvy">
+                  <option>Červená</option>
+                  <option>Oranžová</option>
+                </optgroup>
+              </select>
+            </label>
+            <label for="demo-datalist">Oblíbený prohlížeč
+              <input id="demo-datalist" list="browser-options" placeholder="Začněte psát...">
+              <datalist id="browser-options">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Safari">
+                <option value="Edge">
+              </datalist>
+            </label>
+          </div>
+
+          <fieldset class="choice-group">
+            <legend>Preferovaný způsob kontaktu (radio)</legend>
+            <label><input type="radio" name="contact" value="email" checked> E-mail</label>
+            <label><input type="radio" name="contact" value="phone"> Telefon</label>
+            <label><input type="radio" name="contact" value="none"> Žádný</label>
+          </fieldset>
+
+          <fieldset class="choice-group">
+            <legend>Zájmy (checkbox)</legend>
+            <label><input type="checkbox" name="interest" value="design" checked> Design</label>
+            <label><input type="checkbox" name="interest" value="coding"> Programování</label>
+            <label><input type="checkbox" name="interest" value="travel"> Cestování</label>
+          </fieldset>
+
+          <label for="demo-message">Zpráva
+            <textarea id="demo-message" rows="4" placeholder="Napište svou zprávu..."></textarea>
+          </label>
+
+          <label class="consent-label"><input type="checkbox" name="consent"> Souhlasím s ukázkovými podmínkami</label>
+          <div class="demo-buttons">
+            <button type="button">Obyčejné tlačítko</button>
+            <button type="submit">Odeslat (nefunkční)</button>
+            <button type="reset">Vymazat (nefunkční)</button>
+            <input type="button" value="Input button">
+            <input type="submit" value="Input submit">
+            <input type="reset" value="Input reset">
+          </div>
+        </fieldset>
+      </form>
+    </main>
+    <footer class="site-footer">
+      <p class="footer-country">Formulářové ukázky — nefunkční demo</p>
+      <div class="footer-links">
+        <a href="index.html">Vyhledávání Google</a>
+       <a href="https://martincahel.github.io/">portfolio</a>
+        <a href="citace.md">Citace a zdroje</a>
+        <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fmartincahel.github.io%2Fgooglesearch%2Fforms.html">Validovat HTML</a>
+        <a href="https://jigsaw.w3.org/css-validator/">Validovat CSS</a>
+      </div>
+    </footer>
+  </body>
+</html>

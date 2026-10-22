@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Rozšířené vyhledávání Google podle zadaných slov a frází.">
+    <title>Rozšířené vyhledávání</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="advanced-page">
+    <header class="advanced-header">
+      <a class="mini-wordmark" href="index.html" aria-label="Google – domů">
+        <span class="google-blue">G</span><span class="google-red">o</span><span class="google-yellow">o</span><span class="google-blue">g</span><span class="google-green">l</span><span class="google-red">e</span>
+      </a>
+      <nav aria-label="Hlavní navigace">
+        <a href="index.html">Vyhledávání Google</a>
+        <a href="image.html">Obrázky</a>
+        <a href="forms.html">Formuláře</a>
+      </nav>
+    </header>
+    <main class="advanced-main">
+      <h1>Rozšířené vyhledávání</h1>
+      <form action="https://www.google.com/search" method="get">
+        <div class="advanced-fields">
+          <label for="all-words">Najít stránky obsahující všechna tato slova:</label>
+          <input id="all-words" type="text" name="as_q">
+
+          <label for="exact-phrase">Najít stránky obsahující přesně toto slovo nebo frázi:</label>
+          <input id="exact-phrase" type="text" name="as_epq">
+
+          <label for="any-words">Najít stránky obsahující některé z těchto slov:</label>
+          <input id="any-words" type="text" name="as_oq">
+
+          <label for="none-words">Najít stránky neobsahující žádné z těchto slov:</label>
+          <input id="none-words" type="text" name="as_eq">
+        </div>
+        <div class="advanced-actions">
+          <button class="advanced-button" type="submit">Rozšířené vyhledávání</button>
+        </div>
+      </form>
+    </main>
+    <footer class="site-footer">
+      <p class="footer-country">Česká republika</p>
+      <div class="footer-links">
+        <a href="forms.html">Ukázky formulářů</a>
+        <a href="citace.md">Citace a zdroje</a>
+        <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fmartincahel.github.io%2Fgooglesearch%2Fadvanced.html">Validovat HTML</a>
+        <a href="https://jigsaw.w3.org/css-validator/">Validovat CSS</a>
+        <a href="https://martincahel.github.io/">portfolio</a>
+      </div>
+    </footer>
+  </body>
+</html>
